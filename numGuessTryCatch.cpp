@@ -29,13 +29,13 @@ int main() {
 
         // if the user gets the number right, tell them they were right
         if (userGuessInt == randomAnswer) {
-            std ::cout << "Your guess was right!" << std::endl;
+            std ::cout << "Your guess was right!";
         } else {
             // otherwise, tell them they were wrong
-            std ::cout << "Your guess was wrong! The answer was " << randomAnswer << "." << std::endl;
+            std::cout << "Wrong! The answer was " << randomAnswer << ".";
         }
     } catch (std::invalid_argument) {
-        // if user guess cannot be an integer, then tell the user to enter an integer
+        // if user guess is not an integer, then tell them to enter an integer
         std ::cout << userGuessString << " is not an integer between 0 and 9.";
     }
 }
